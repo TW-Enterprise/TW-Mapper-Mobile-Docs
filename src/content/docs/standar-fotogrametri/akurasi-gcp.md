@@ -32,11 +32,11 @@ Anda wajib memasang patok target **GCP (Ground Control Points)** di darat yang d
 
 ```mermaid
 flowchart TD
-    A[Pasang Target Tanda Silang GCP di Darat] --> B[Ukur Koordinat Akurat GCP dengan GPS Geodetik]
-    B --> C[Terbangkan Drone dengan TW-Mapper]
-    C --> D[Foto Udara Menangkap Target GCP di Tanah]
-    D --> E[Masukkan Koordinat GCP Saat Mengolah Foto di Pix4D / Agisoft]
-    E --> F[Hasil Peta Ortofoto Terkunci Presisi Sentimeter!]
+    A["Pasang Target Tanda Silang GCP di Darat"] --> B["Ukur Koordinat Akurat GCP dengan GPS Geodetik"]
+    B --> C["Terbangkan Drone dengan TW-Mapper"]
+    C --> D["Foto Udara Menangkap Target GCP di Tanah"]
+    D --> E["Masukkan Koordinat GCP Saat Mengolah Foto di Pix4D / Agisoft"]
+    E --> F["Hasil Peta Ortofoto Terkunci Presisi Sentimeter!"]
 ```
 
 ![Distribusi Titik Kontrol Tanah GCP untuk Akurasi Kadaster BPN](/TW-Mapper-Mobile-Docs/images/manual/akurasi_gcp_sebaran_titik.png)

@@ -11,12 +11,12 @@ Sebelum menekan tombol *Mulai Terbang (Start)* di menu Waypoint aplikasi DJI Fly
 
 ```mermaid
 flowchart TD
-    A[Nyalakan Drone & Buka DJI Fly] --> B[1. Kunci Satelit GPS: Minimal 18-20 Satelit]
-    B --> C[2. Periksa Home Point Terkunci di Lokasi Anda]
-    C --> D[3. Atur Ketinggian RTH Lebih Tinggi dari Objek Tertinggi]
-    D --> E[4. Format MicroSD & Pastikan Ruang Cukup]
-    E --> F[5. Aktifkan Sensor Anti-Tabrak APAS / Bypass]
-    F --> G((Tekan Tombol START Waypoint -> Drone Terbang Otomatis!))
+    A["Nyalakan Drone & Buka DJI Fly"] --> B["1. Kunci Satelit GPS: Minimal 18-20 Satelit"]
+    B --> C["2. Periksa Home Point Terkunci di Lokasi Anda"]
+    C --> D["3. Atur Ketinggian RTH Lebih Tinggi dari Objek Tertinggi"]
+    D --> E["4. Format MicroSD & Pastikan Ruang Cukup"]
+    E --> F["5. Aktifkan Sensor Anti-Tabrak APAS / Bypass"]
+    F --> G["Tekan Tombol START Waypoint: Drone Terbang Otomatis!"]
 ```
 
 ![Checklist Keselamatan Pra-Terbang SOP Pilot APDI](/TW-Mapper-Mobile-Docs/images/manual/checklist_keselamatan_preflight.png)

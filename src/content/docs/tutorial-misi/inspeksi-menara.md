@@ -23,11 +23,11 @@ Pada pola **Helix 3D**, drone berputar melingkar secara kontinu sambil turun per
 
 ```mermaid
 flowchart TD
-    A[Bawa Drone Naik Lurus ke Puncak Menara] --> B[Mulai Misi dari Atas: Top-to-Bottom]
-    B --> C[Drone Berputar Melingkar Sambil Menurun / Helix]
-    C --> D[Kamera Menunduk -30° s/d -45° Menghadap Objek]
-    D --> E[Latar Belakang Tanah/Bumi: Bebas Noise Awan & Langit]
-    E --> F[Misi Selesai di Dekat Permukaan Tanah dengan Baterai Aman]
+    A["Bawa Drone Naik Lurus ke Puncak Menara"] --> B["Mulai Misi dari Atas: Top-to-Bottom"]
+    B --> C["Drone Berputar Melingkar Sambil Menurun / Helix"]
+    C --> D["Kamera Menunduk -30° s/d -45° Menghadap Objek"]
+    D --> E["Latar Belakang Tanah/Bumi: Bebas Noise Awan & Langit"]
+    E --> F["Misi Selesai di Dekat Permukaan Tanah dengan Baterai Aman"]
 ```
 
 ![Inspeksi Menara BTS Pola Orbit Helix 3D](/TW-Mapper-Mobile-Docs/images/manual/orbit_3d_menara_helix_settings.png)

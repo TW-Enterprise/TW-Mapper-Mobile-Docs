@@ -12,12 +12,12 @@ Mode **Double Grid** di TW-Mapper menghasilkan dua set jalur terbang yang saling
 ## 🏢 Langkah Perancangan Misi Double Grid
 
 ```mermaid
-graph TD
-    subgraph Pola Silang 90 Derajat
-        A[Jalur Lajur 1: Arah Utara - Selatan] --> C[Dinding Sisi Depan & Belakang]
-        B[Jalur Lajur 2: Arah Timur - Barat] --> D[Dinding Sisi Kiri & Kanan]
+flowchart TD
+    subgraph sgCross ["Pola Silang 90 Derajat"]
+        A["Jalur Lajur 1: Arah Utara - Selatan"] --> C["Dinding Sisi Depan & Belakang"]
+        B["Jalur Lajur 2: Arah Timur - Barat"] --> D["Dinding Sisi Kiri & Kanan"]
     end
-    C --> E[Model 3D Bangunan Sempurna Tanpa Area Buta]
+    C --> E["Model 3D Bangunan Sempurna Tanpa Area Buta"]
     D --> E
 ```
 

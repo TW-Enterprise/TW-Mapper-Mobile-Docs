@@ -15,11 +15,11 @@ Lakukan langkah sederhana ini saat Anda masih berada di rumah, hotel, atau kanto
 
 ```mermaid
 flowchart TD
-    A[Hubungkan Remote ke Wi-Fi / Hotspot Internet] --> B[Buka TW-Mapper & Geser Peta ke Lokasi Kerja]
-    B --> C[Perbesar Zoom Layar: Level 15 s/d 18]
-    C --> D[Geser Layar Memutari Seluruh Batas Lahan]
-    D --> E[Tekan Menu 'Simpan Cache Area']
-    E --> F((Peta Satelit Tersimpan Permanen di Memori Remote!))
+    A["Hubungkan Remote ke Wi-Fi / Hotspot Internet"] --> B["Buka TW-Mapper & Geser Peta ke Lokasi Kerja"]
+    B --> C["Perbesar Zoom Layar: Level 15 s/d 18"]
+    C --> D["Geser Layar Memutari Seluruh Batas Lahan"]
+    D --> E["Tekan Menu Simpan Cache Area"]
+    E --> F["Peta Satelit Tersimpan Permanen di Memori Remote!"]
 ```
 
 ![Manajemen Pengunduhan Peta Satelit Offline](/TW-Mapper-Mobile-Docs/images/manual/tools_unduh_peta_offline.png)

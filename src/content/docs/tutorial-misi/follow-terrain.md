@@ -22,11 +22,11 @@ TW-Mapper Mobile membaca data elevasi permukaan bumi digital (**Digital Elevatio
 
 ```mermaid
 flowchart LR
-    A[Puncak Bukit: Elevasi +150m] --- B[Lereng Bukit: Elevasi +80m] --- C[Lembah: Elevasi +20m]
-    D[Jalur Terbang Drone Mengikuti Naik-Turun Tanah]
-    D -.->|Jarak Konstan H = 80m| A
-    D -.->|Jarak Konstan H = 80m| B
-    D -.->|Jarak Konstan H = 80m| C
+    A["Puncak Bukit: Elevasi +150m"] --- B["Lereng Bukit: Elevasi +80m"] --- C["Lembah: Elevasi +20m"]
+    D["Jalur Terbang Drone Mengikuti Naik-Turun Tanah"]
+    D -.->|"Jarak Konstan H = 80m"| A
+    D -.->|"Jarak Konstan H = 80m"| B
+    D -.->|"Jarak Konstan H = 80m"| C
 ```
 
 ### Keuntungan Utama:

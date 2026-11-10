@@ -20,10 +20,10 @@ TW-Mapper Mobile secara otomatis mengaktifkan bilah kendali cepat di dalam menu 
 
 ```mermaid
 flowchart LR
-    A[Geser Tirai Atas Remote ke Bawah] --> B[Pusat Notifikasi Android]
-    B --> C[🔴 Buka TW-Mapper]
-    B --> D[🚁 Buka DJI Fly]
-    B --> E[📁 Buka Dokumen / File]
+    A["Geser Tirai Atas Remote ke Bawah"] --> B["Pusat Notifikasi Android"]
+    B --> C["Buka TW-Mapper"]
+    B --> D["Buka DJI Fly"]
+    B --> E["Buka Dokumen / File"]
 ```
 
 ### Cara Menggunakannya di Lapangan:

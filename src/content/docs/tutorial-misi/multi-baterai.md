@@ -13,16 +13,16 @@ TW-Mapper Mobile dan DJI Fly memiliki fitur pembagian rute dan penyambungan otom
 
 ```mermaid
 flowchart TD
-    subgraph Strategi A: Jeda & Lanjut di DJI Fly (Rekomendasi)
-        A1[Terbangkan Misi Penuh] --> A2[Baterai Tersisa 25%: Tekan Tombol Pause / Jeda]
-        A2 --> A3[Panggil Drone Mendarat: RTH]
-        A3 --> A4[Ganti Baterai Baru & Sambungkan Ulang]
-        A4 --> A5[Tekan Resume: Drone Otomatis Melanjutkan dari Waypoint Terakhir]
+    subgraph sgA ["Strategi A: Jeda & Lanjut di DJI Fly (Rekomendasi)"]
+        A1["Terbangkan Misi Penuh"] --> A2["Baterai Tersisa 25%: Tekan Tombol Pause / Jeda"]
+        A2 --> A3["Panggil Drone Mendarat: RTH"]
+        A3 --> A4["Ganti Baterai Baru & Sambungkan Ulang"]
+        A4 --> A5["Tekan Resume: Drone Otomatis Melanjutkan dari Waypoint Terakhir"]
     end
 
-    subgraph Strategi B: Pembagian Sub-Blok Misi di TW-Mapper
-        B1[Bagi Lahan Menjadi Blok 1, Blok 2, Blok 3] --> B2[Setiap Blok Dirancang Pas untuk 1 Baterai: ~18 Menit]
-        B2 --> B3[Injeksi Berurutan: Blok 1 -> Blok 2 -> Blok 3]
+    subgraph sgB ["Strategi B: Pembagian Sub-Blok Misi di TW-Mapper"]
+        B1["Bagi Lahan Menjadi Blok 1, Blok 2, Blok 3"] --> B2["Setiap Blok Dirancang Pas untuk 1 Baterai (±18 Menit)"]
+        B2 --> B3["Injeksi Berurutan: Blok 1, Blok 2, lalu Blok 3"]
     end
 ```
 

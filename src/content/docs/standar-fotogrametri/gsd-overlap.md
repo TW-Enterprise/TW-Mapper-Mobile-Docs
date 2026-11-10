@@ -37,9 +37,9 @@ Perangkat lunak fotogrametri (seperti Agisoft Metashape, Pix4D, DJI Terra, atau 
 
 ```mermaid
 flowchart LR
-    A[Foto 1] ---|Overlap Depan 75-80%| B[Foto 2]
-    B ---|Overlap Depan 75-80%| C[Foto 3]
-    A -.->|Overlap Samping 65-75%| D[Foto Baris Sebelah]
+    A["Foto 1"] ---|"Overlap Depan 75-80%"| B["Foto 2"]
+    B ---|"Overlap Depan 75-80%"| C["Foto 3"]
+    A -.->|"Overlap Samping 65-75%"| D["Foto Baris Sebelah"]
 ```
 
 ### Rekomendasi Pengaturan Overlap di TW-Mapper:

@@ -36,13 +36,13 @@ Jika slider kecepatan terpotong dan Anda ingin drone terbang lebih kencang agar 
 
 ```mermaid
 flowchart TD
-    A[Kecepatan Terpotong / Ingin Terbang Kencang] --> B[Solusi 1: Naikkan Ketinggian Terbang]
-    A --> C[Solusi 2: Turunkan Frontlap]
-    A --> D[Solusi 3: Alihkan ke Mode 12 MP]
-    B --> E[Jejak Foto Tanah Membesar -> Jarak Antar Foto Melebar]
+    A["Kecepatan Terpotong / Ingin Terbang Kencang"] --> B["Solusi 1: Naikkan Ketinggian Terbang"]
+    A --> C["Solusi 2: Turunkan Frontlap"]
+    A --> D["Solusi 3: Alihkan ke Mode 12 MP"]
+    B --> E["Jejak Foto Tanah Membesar sehingga Jarak Antar Foto Melebar"]
     C --> E
-    D --> F[Jeda Waktu Shutter Memangkas dari 5.0s ke 2.0s]
-    E --> G((Drone Dapat Melaju 2x - 3x Lebih Cepat Tanpa Foto Bolong!))
+    D --> F["Jeda Waktu Shutter Memangkas dari 5.0s ke 2.0s"]
+    E --> G["Drone Dapat Melaju 2x - 3x Lebih Cepat Tanpa Foto Bolong!"]
     F --> G
 ```
 

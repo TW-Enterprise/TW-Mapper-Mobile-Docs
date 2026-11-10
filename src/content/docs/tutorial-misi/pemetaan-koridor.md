@@ -13,10 +13,10 @@ TW-Mapper menyediakan mode khusus bernama **Misi Koridor (Corridor Mode)** yang 
 
 ```mermaid
 flowchart LR
-    A[Sentuh Titik Sumbu Jalan / Polyline] --> B[Atur Lebar Sayap Koridor: 50m - 100m]
-    B --> C[Tentukan Jumlah Lajur Lintasan: 2 / 3 Pass]
-    C --> D[Otomasi Belokan Lengkung Halus]
-    D --> E[Injeksi Misi ke DJI Fly]
+    A["Sentuh Titik Sumbu Jalan / Polyline"] --> B["Atur Lebar Sayap Koridor: 50m - 100m"]
+    B --> C["Tentukan Jumlah Lajur Lintasan: 2 / 3 Pass"]
+    C --> D["Otomasi Belokan Lengkung Halus"]
+    D --> E["Injeksi Misi ke DJI Fly"]
 ```
 
 ![Pengaturan Lebar Koridor dan Jumlah Lajur di TW-Mapper](/TW-Mapper-Mobile-Docs/images/manual/koridor_pengaturan_lebar_buffer.png)

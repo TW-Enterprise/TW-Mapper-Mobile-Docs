@@ -31,10 +31,10 @@ TW-Mapper hadir untuk memangkas kerumitan tersebut:
 
 ```mermaid
 flowchart LR
-    A[Buka TW-Mapper di Remote / HP] --> B[Tandai Batas Lahan di Peta Satelit]
-    B --> C[Atur Tinggi & Overlap Kamera]
-    C --> D[Tekan 'Injeksi Misi KMZ']
-    D --> E[Buka DJI Fly & Terbangkan Drone]
+    A["Buka TW-Mapper di Remote / HP"] --> B["Tandai Batas Lahan di Peta Satelit"]
+    B --> C["Atur Tinggi & Overlap Kamera"]
+    C --> D["Tekan Injeksi Misi KMZ"]
+    D --> E["Buka DJI Fly & Terbangkan Drone"]
 ```
 
 - **100% Berjalan di Remote Kontrol**: Anda cukup membawa remote kontrol ke lapangan. Rancang poligon atau jalur koridor langsung di atas peta satelit.

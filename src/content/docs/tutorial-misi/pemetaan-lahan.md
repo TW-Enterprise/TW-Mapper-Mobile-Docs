@@ -11,11 +11,11 @@ Pemetaan area lahan perkebunan, perumahan, tambang, atau kawasan persawahan adal
 
 ```mermaid
 flowchart TD
-    A[Langkah 1: Tentukan Batas Lahan di Peta] --> B[Langkah 2: Pilih Model Drone Anda]
-    B --> C[Langkah 3: Atur Ketinggian Terbang & Target GSD]
-    C --> D[Langkah 4: Tentukan Persentase Overlap Foto]
-    D --> E[Langkah 5: Periksa Estimasi Waktu & Baterai]
-    E --> F[Langkah 6: Tekan Injeksi Misi KMZ]
+    A["Langkah 1: Tentukan Batas Lahan di Peta"] --> B["Langkah 2: Pilih Model Drone Anda"]
+    B --> C["Langkah 3: Atur Ketinggian Terbang & Target GSD"]
+    C --> D["Langkah 4: Tentukan Persentase Overlap Foto"]
+    D --> E["Langkah 5: Periksa Estimasi Waktu & Baterai"]
+    E --> F["Langkah 6: Tekan Injeksi Misi KMZ"]
 ```
 
 ![Panduan Pemetaan Lahan dan Grid Poligon di TW-Mapper](/TW-Mapper-Mobile-Docs/images/manual/lahan_grid_gambar_poligon.png)
