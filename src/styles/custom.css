@@ -434,3 +434,14 @@ h1#_top {
     grid-template-columns: 1fr;
   }
 }
+
+/* KaTeX math adjustments for Starlight */
+.katex-html svg {
+  height: inherit;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}

@@ -10,6 +10,9 @@ import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import { marked } from 'marked';
+import markedKatex from 'marked-katex-extension';
+
+marked.use(markedKatex({ throwOnError: false }));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -185,12 +188,16 @@ function buildBookHtml() {
     }
   }
 
+  const katexCssPath = join(SITE_DIR, 'node_modules', 'katex', 'dist', 'katex.min.css');
+  const katexCss = existsSync(katexCssPath) ? readFileSync(katexCssPath, 'utf-8') : '';
+
   return `<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="utf-8">
   <title>Buku Panduan Pengguna — TW-Mapper Mobile</title>
   <style>
+    ${katexCss}
     @page {
       size: A4;
       margin: 22mm 18mm 22mm 18mm;

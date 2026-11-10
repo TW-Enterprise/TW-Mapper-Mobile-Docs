@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const base = process.env.DOCS_BASE ?? '/TW-Mapper-Mobile-Docs';
 const siteUrl = process.env.DOCS_SITE ?? 'https://tw-enterprise.github.io';
@@ -8,6 +10,10 @@ const siteUrl = process.env.DOCS_SITE ?? 'https://tw-enterprise.github.io';
 export default defineConfig({
   site: siteUrl,
   base,
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
+  },
   integrations: [
     starlight({
       title: 'TW-Mapper Mobile',
@@ -21,6 +27,7 @@ export default defineConfig({
         { icon: 'github', label: 'GitHub', href: 'https://github.com/TW-Enterprise/TW-Mapper-Mobile' },
       ],
       customCss: [
+        'katex/dist/katex.min.css',
         './src/styles/custom.css',
       ],
       sidebar: [
