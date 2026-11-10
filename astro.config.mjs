@@ -86,18 +86,6 @@ export default defineConfig({
             { label: 'Solusi Masalah Lapangan', slug: 'faq/troubleshooting' },
           ],
         },
-        {
-          label: 'Referensi Pengembang (Developer)',
-          collapsed: true,
-          items: [
-            { label: 'Arsitektur Kode Sumber', slug: 'developer/architecture' },
-            { label: 'Kebijakan Rilis & CI/CD', slug: 'developer/release-policy' },
-            { label: 'Build Lokal & Firebase Sync', slug: 'developer/local-build' },
-            { label: 'Protokol DUML Murni', slug: 'hardware-duml/duml-protocol' },
-            { label: 'Arsitektur Dual Transport', slug: 'hardware-duml/dual-transport' },
-            { label: 'Kontrol Parameter FC', slug: 'hardware-duml/parameter-control' },
-          ],
-        },
       ],
       tableOfContents: {
         minHeadingLevel: 2,
