@@ -1,0 +1,22 @@
+{
+  "name": "tw-mapper-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dokumentasi Resmi TW-Mapper-Mobile — Sistem Perencanaan Jalur Terbang & Fotogrametri Drone DJI",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build:site": "astro build",
+    "build:pdf": "node scripts/generate-manual-pdf.mjs",
+    "build": "astro build && node scripts/generate-manual-pdf.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.42.10",
+    "astro": "7.4.7"
+  },
+  "devDependencies": {
+    "marked": "^18.1.3",
+    "puppeteer": "^25.16.0"
+  }
+}
