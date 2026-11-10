@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import mermaid from 'astro-mermaid';
 
 const base = process.env.DOCS_BASE ?? '/TW-Mapper-Mobile-Docs';
 const siteUrl = process.env.DOCS_SITE ?? 'https://tw-enterprise.github.io';
@@ -95,6 +96,9 @@ export default defineConfig({
         minHeadingLevel: 2,
         maxHeadingLevel: 3,
       },
+    }),
+    mermaid({
+      autoTheme: true,
     }),
   ],
 });
