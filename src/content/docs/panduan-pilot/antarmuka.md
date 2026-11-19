@@ -69,8 +69,8 @@ Layar kerja terbagi menjadi 3 area utama yang sangat intuitif:
 
 Untuk memastikan kenyamanan jempol dan jari pilot saat beroperasi di bawah terik matahari atau menggunakan sarung tangan lapangan, TW-Mapper Mobile menerapkan standar geometri antarmuka yang konsisten:
 
-1. **Tombol Kotak Bersudut Membulat (*Rounded Rectangle* 6–8 dp)**:
-   - Seluruh tombol aksi utama, tombol navigasi blok (`‹` dan `›`), tombol *Takeoff H*, tombol *Edit/Gambar Misi*, tombol *Tambah Titik/Blok*, serta tombol pada dialog pengaturan diseragamkan dengan sudut membulat modern. Geometri ini memberikan area sentuh (*tap target*) yang maksimal dan mencegah salah pencet.
+1. **Tombol Kotak Bersudut Membulat (*Rounded Rectangle* 5–8 dp)**:
+   - Seluruh tombol aksi utama, tombol navigasi blok (`‹` dan `›`), pemilih mode misi (*Grid*, *Koridor*, *Orbit 3D*), metode penggambaran (*Bidik*, *Sentuh*, *GPS RC*, *GPS Foto*, *Auto Walk*), pengalih perspektif *2D* / *3D*, kontrol interaksi 3D (*Putar* dan *Geser*), tombol *Takeoff H*, tombol *Edit/Gambar Misi*, tombol *Tambah Titik/Blok*, serta seluruh tombol dialog pengaturan dan pratinjau diseragamkan dengan sudut membulat modern. Geometri ini memberikan area sentuh (*tap target*) yang maksimal dan mencegah salah pencet di lapangan.
 2. **Elemen Bulat Alami (*Natural Circular Elements*)**:
    - Elemen yang memiliki fungsi semantik berorientasi derajat dan koordinat tetap berbentuk lingkaran murni (`circle`):
      - **Kompas Azimut 360°**: Tetap bulat presisi agar penunjukan arah mata angin utara dan heading drone terlihat natural.
