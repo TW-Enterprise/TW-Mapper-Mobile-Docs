@@ -60,6 +60,8 @@ Jika Anda lebih menyukai manajemen file per kelompok blok tanah (misal: *Blok Ba
 > [!NOTE]
 > *Gambar 2.6: Dialog Waypoint Fallback. Jika jumlah waypoint melebihi batas remote, sistem secara cerdas menawarkan opsi beralih ke Mode Timeshoot atau membagi misi menjadi sub-blok.*
 
-- Buat poligon untuk masing-masing blok secara terpisah.
+- Buat poligon untuk masing-masing blok secara terpisah. Penamaan blok otomatis menggunakan template standar yang teratur: `Blok 1`, `Blok 2`, `Blok 3`, dan seterusnya.
 - Amati indikator **Estimasi Waktu Terbang** di panel kanan: pastikan durasi berkisar antara **16 – 20 menit** per blok agar pas dengan kapasitas 1 baterai dengan cadangan keselamatan 25%.
+- Jika jumlah titik waypoint melebihi 50, spanduk peringatan **Bagi Misi / WP > 50** kini muncul di **samping kanan kompas navigasi** (sudut kiri bawah layar) sehingga posisi kompas tetap terbaca jelas tanpa terhalang.
+- Saat membuka dialog **Laporan Misi / Pratinjau**, tampilan peta pratinjau kini sangat bersih: hanya menampilkan garis jalur terbang utama, titik Home (H), titik awal (A), dan titik akhir (B) tanpa taburan titik waypoint perantara yang membingungkan.
 - Injeksi masing-masing blok ke slot misi yang berbeda di remote kontrol.
