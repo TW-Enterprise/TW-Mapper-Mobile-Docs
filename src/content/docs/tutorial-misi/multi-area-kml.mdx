@@ -25,22 +25,29 @@ flowchart TD
 
 ---
 
-## 🕹️ Mengenal Bilah Kendali Multi-Area (Floating HUD Dock)
+## 🕹️ Mengenal Tombol & Bilah Navigasi Multi-Area (Top-Left HUD Pill)
 
-Ketika Anda membuka file KML dengan banyak blok atau menambahkan blok baru, sebuah bilah kontrol ramping mengambang akan otomatis muncul di bagian tengah atas layar peta:
+Untuk menjaga ruang pandang layar remote controller tetap luas dan tidak menutupi indikator parameter utama (*Luas, Waktu, Foto, Baterai*), tombol kontrol blok ditempatkan di **sudut kiri atas layar peta (Top-Left)**:
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│  ◀  │  📁 Blok 5 (Afdeling B) • 142.5 Ha ▼  │  ▶  │  + Blok  │
-└──────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────┐
+│  📑 Blok Area ▾                      │   (Saat baru mulai / 1 blok aktif)
+└──────────────────────────────────────┘
+┌──────────────────────────────────────┐
+│  ‹  1/33 Blok 1 (142.5 Ha) ▾  ›      │   (Saat multi-blok aktif > 1 blok)
+└──────────────────────────────────────┘
 ```
 
-1. **Tombol Panah Kiri (◀)**: Pindah mundur ke nomor blok sebelumnya secara instan.
-2. **Kapsul Nama Blok & Luas (Dropdown)**:
-   - Menampilkan nomor blok, nama divisi, dan total luas dalam satuan Hektar (Ha).
-   - Sentuh kapsul ini untuk membuka **laci pemilih blok** yang dilengkapi kotak pencarian (*search filter*) untuk memilih cepat dari puluhan hingga ratusan blok.
-3. **Tombol Panah Kanan (▶)**: Pindah maju ke blok berikutnya.
-4. **Tombol "+ Blok"**: Menambahkan poligon blok baru langsung di lapangan jika Anda ingin memperluas atau mempartisi area kerja secara manual.
+1. **Tombol Pill Sudut Kiri Atas (`[ 📑 Blok Area ▾ ]`)**:
+   - Selalu siap diakses di sudut kiri atas saat berada di mode **Area Poligon**.
+   - Menyentuh tombol ini akan membuka **Dialog Kelola Blok Area**.
+2. **Navigasi Cepat Blok (`‹` dan `›`)**:
+   - Ketika file KML memiliki banyak blok, tanda panah `‹` dan `›` muncul di sisi kiri-kanan pill untuk beralih blok secara instan dengan satu sentuhan.
+3. **Pencarian & Manajemen Blok Bebas Polusi Layar**:
+   - Sentuh nama blok untuk membuka daftar lengkap blok dengan fitur **pencarian cepat (search)**, ganti nama, hapus blok, serta tombol **"+ Tambah Blok Baru"**.
+   - Tidak ada tombol `+` yang menumpuk di atas kanvas peta, menjaga layar tetap bersih dan fokus pada jalur terbang.
+4. **Akses Alternatif**:
+   - Anda juga dapat membuka jendela kelola blok melalui menu **Lapisan Peta** di sudut kanan atas (`Kelola Blok Area (Multi-Area)...`).
 
 ---
 
