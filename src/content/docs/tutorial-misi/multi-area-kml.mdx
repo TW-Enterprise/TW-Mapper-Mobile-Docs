@@ -42,17 +42,40 @@ Di sisi kiri tepi layar, kini terdapat tab pendamping yang sejajar dengan tab pa
 └────────────────────────────────┘
 ```
 
-Menyentuh tab ini akan membuka panel laci samping yang lengkap:
-- **Status & Nama Blok**: Melihat seluruh daftar blok kebun, afdeling, dan luas hektarnya ($Ha$).
+Menyentuh tab ini akan membuka panel bilah samping ultra-minimalis (lebar ringkas 250dp) yang rapi dan berdensitas tinggi:
+- **Status & Nama Blok**: Melihat seluruh daftar blok kebun, afdeling, dan luas hektarnya ($Ha$) secara ringkas.
 - **Navigasi Cepat (◀ dan ▶)**: Berpindah blok sasaran hanya dengan satu sentuhan tanpa repot.
 - **Pencarian Cepat (*Search*)**: Menemukan nama blok secara instan dari puluhan hingga ratusan partisi kebun.
 - **Tombol Hijau "+ Tambah Blok Baru"**: Menambahkan poligon blok baru langsung dari bilah samping tanpa memadati kanvas peta.
 - **Ganti Nama & Hapus**: Opsi edit nama dan hapus blok terorganisir rapi di dalam panel.
 
-### 2. Indikator Parameter Utama Minimalis (Dipepetkan ke Bar Atas)
+### 2. Tampilan Peta Bersih: Tombol Blok Aktif Tersembunyi Otomatis
+Untuk memastikan kenyamanan pilot saat mengedit sudut poligon atau memeriksa jalur terbang:
+- **Pada Blok Aktif**: Tombol label di tengah poligon **disembunyikan sepenuhnya** sehingga kanvas bersih dan tidak ada tombol besar yang menghalangi sentuhan jari pilot.
+- **Pada Blok Tidak Aktif**: Ditampilkan dalam bentuk pil minimalis ramping berukuran kecil (`Blok 2 • 142.5Ha`) dengan indikator titik kuning, sehingga peta tetap rapi dan tidak penuh.
+
+### 3. Indikator Parameter Utama Minimalis (Dipepetkan ke Bar Atas)
 Bilah indikator parameter terbang (*Luas, Jarak, Waktu, Foto, Baterai, WP, GSD*) kini **dipepetkan langsung pada bar atas layar (`top: 0`)** dengan desain minimalis ultra-ramping (tinggi 24dp):
 - Bagian atas rata menempel langsung pada bilah judul (*CustomTitleBar*), dan bagian bawah melengkung halus (*docked ribbon shape*).
 - Menghilangkan celah kosong (*gap*) mengambang di langit peta sehingga tidak menutupi orientasi terbang maupun poligon kerja pilot.
+
+---
+
+## 💾 Logika & Metode Penyimpanan Multi-Area
+
+Memahami format penyimpanan sangat penting agar data proyek perkebunan Anda tersimpan aman dan teratur:
+
+| Format Berkas | Peruntukan Utama | Kapabilitas Multi-Blok | Keterangan & Kompatibilitas |
+| :--- | :--- | :---: | :--- |
+| **Master KML (`.kml`)** | **Penyimpanan Master Proyek Kebun** | **Ya (Seluruh Blok)** | Format standar OGC KML 2.2. Menyimpan seluruh batas poligon blok lengkap dengan styling warna, serta menyimpan parameter terbang (*altitude, speed, overlap, sidelap, drone, aktif blok*) di dalam `<ExtendedData>`. Dapat dibuka langsung di Google Earth (3D) dan TW-Mapper tanpa perlu mengatur ulang parameter. |
+| **Master Proyek JSON (`.json`)** | **Cadangan Lengkap Proyek TW-Mapper** | **Ya (Seluruh Blok)** | Menyimpan seluruh geometri, waypoint, partisi blok, dan parameter secara detail untuk restorasi internal. |
+| **DJI KMZ (`.kmz`)** | **Eksekusi Terbang di DJI Fly** | **Blok Aktif Saja** | Karena arsitektur DJI Fly hanya menjalankan 1 misi jalur terbang dalam satu waktu, ekspor KMZ otomatis menamai dan mengemas rute dari **blok yang sedang aktif** (misal: `Kebun Sawit MUBA (Blok 1) (Mavic 3E).kmz`). |
+
+### Pratinjau Terpadu di Menu Buka Misi
+Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi**:
+- Mini-map pratinjau secara otomatis mencakup **seluruh blok kebun** dari ujung ke ujung.
+- Seluruh batas blok dirender (blok pertama berwarna Cyan dan blok lainnya berwarna Amber).
+- Terdapat badge indikator khusus: `33 BLOK AREA` dan akumulasi total luas seluruh perkebunan (misal: `4.769,21 ha`), sehingga pilot dapat memverifikasi isi berkas sebelum memuatnya ke kanvas.
 
 ---
 
