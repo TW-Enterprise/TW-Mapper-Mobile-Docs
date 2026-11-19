@@ -45,6 +45,7 @@ export default defineConfig({
           label: 'Tutorial Misi Lapangan',
           items: [
             { label: 'Misi Lahan & Kebun (Grid Poligon)', slug: 'tutorial-misi/pemetaan-lahan' },
+            { label: 'Misi Multi-Area KML (Banyak Blok Kebun)', slug: 'tutorial-misi/multi-area-kml' },
             { label: 'Misi Koridor (Jalan, Pipa, Sungai)', slug: 'tutorial-misi/pemetaan-koridor' },
             { label: 'Misi 3D & Fasad (Double Grid)', slug: 'tutorial-misi/pemetaan-3d-fasad' },
             { label: 'Inspeksi Menara (Orbit 3D Helix)', slug: 'tutorial-misi/inspeksi-menara' },
