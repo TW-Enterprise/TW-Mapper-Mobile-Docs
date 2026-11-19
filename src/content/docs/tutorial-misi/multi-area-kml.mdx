@@ -71,11 +71,11 @@ Memahami format penyimpanan sangat penting agar data proyek perkebunan Anda ters
 | **Master Proyek JSON (`.json`)** | **Cadangan Lengkap Proyek TW-Mapper** | **Ya (Seluruh Blok)** | Menyimpan seluruh geometri, waypoint, partisi blok, dan parameter secara detail untuk restorasi internal. |
 | **DJI KMZ (`.kmz`)** | **Eksekusi Terbang di DJI Fly** | **Blok Aktif Saja** | Karena arsitektur DJI Fly hanya menjalankan 1 misi jalur terbang dalam satu waktu, ekspor KMZ otomatis menamai dan mengemas rute dari **blok yang sedang aktif** (misal: `Kebun Sawit MUBA (Blok 1) (Mavic 3E).kmz`). |
 
-### Pratinjau Terpadu di Menu Buka Misi
+### Pratinjau Bersih & Terpadu di Menu Buka Misi
 Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi**:
-- Mini-map pratinjau secara otomatis mencakup **seluruh blok kebun** dari ujung ke ujung.
-- Seluruh batas blok dirender (blok pertama berwarna Cyan dan blok lainnya berwarna Amber).
-- Terdapat badge indikator khusus: `33 BLOK AREA` dan akumulasi total luas seluruh perkebunan (misal: `4.769,21 ha`), sehingga pilot dapat memverifikasi isi berkas sebelum memuatnya ke kanvas.
+- Mini-map pratinjau secara otomatis mencakup **seluruh cakupan area kebun** dari ujung ke ujung menggunakan pembingkaian cerdas (*auto-fit bounds*).
+- Menampilkan cakupan visual poligon batas area yang bersih di atas citra satelit tanpa indikator penerbangan yang tidak relevan (tanpa rute A/B, garis terbang, atau perkiraan foto).
+- Di bilah atas pratinjau, disajikan ringkasan instan: `[N] BLOK • [Total Luas] Ha`, sehingga pilot langsung mengetahui isi berkas sebelum memuatnya ke kanvas.
 
 ---
 
@@ -92,19 +92,23 @@ Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi
 
 ---
 
-### Langkah 2: Dua Cara Memilih Blok Sasaran
+### Langkah 2: Mengelola Blok dengan Bilah Samping Khusus & Navigasi Peta
 
-Anda dapat mengaktifkan blok yang ingin dipetakan dengan dua metode yang sangat praktis:
+Anda dapat mengaktifkan dan mengelola blok yang ingin dipetakan dengan berbagai metode yang sangat fleksibel:
 
-#### Cara A: Sentuh Langsung di Peta (*Tap-to-Activate*)
-- Di layar peta, blok yang sedang **aktif** berwarna **hijau terang** transparan dengan jalur garis terbang lengkap.
-- Blok-blok lain yang belum aktif ditampilkan dengan **garis oranye tipis** lengkap dengan label nama dan luas di tengahnya.
-- Cukup **sentuh area blok oranye** yang ingin Anda kerjakan. Layar akan bergetar lembut (*haptic feedback*) dan blok tersebut langsung menjadi hijau aktif lengkap dengan perhitungan jalur terbang barunya!
+#### Cara A: Bilah Samping Blok Minimalis (*Dedicated Sidebar*)
+- Buka bilah samping blok dari menu parameter/bilah kanan.
+- Desain kartu dibuat ramping satu baris per blok (*ultra-compact single-row*), sangat ringan dan hemat memori pada remote controller DJI RC 2 / RC Pro.
+- Setiap baris dilengkapi indikator titik aktif, nama blok, luas hektar, tombol ubah nama, dan tombol hapus blok.
 
-#### Cara B: Menggunakan Bilah HUD Atas
-- Ketuk kapsul nama blok di bagian atas layar untuk memunculkan daftar seluruh blok.
-- Gunakan kolom pencarian jika jumlah blok sangat banyak (misal ketik `Blok 14`).
-- Ketuk nama blok yang diinginkan, dan peta akan langsung memusatkan tampilan ke blok tersebut.
+#### Cara B: Sentuh Langsung di Peta (*Tap-to-Activate*)
+- Di layar peta, blok yang sedang **aktif** memiliki garis batas tegas dengan jalur terbang lengkap. Tombol tengah pada blok aktif disembunyikan agar kanvas leluasa saat mengedit sudut poligon.
+- Blok pasif lainnya ditandai dengan garis batas dan label nama serta luas yang menempel pas (*shrink-wrap fit shape*) pada teksnya.
+- Cukup **sentuh label atau poligon blok** yang ingin Anda kerjakan untuk langsung menjadikannya blok aktif!
+
+#### Cara C: Penamaan Blok Ramah Keyboard (*Keyboard-Safe Dialog*)
+- Saat Anda menambah blok baru atau mengubah nama blok, kotak dialog secara otomatis bergeser ke bagian atas layar (*top-aligned*).
+- Kolom teks pengetikan tidak akan pernah terhimpit atau tertutup oleh keyboard virtual di layar remote controller, dan Anda dapat langsung menekan tombol **Enter / Done** pada keyboard untuk menyimpan.
 
 ---
 
