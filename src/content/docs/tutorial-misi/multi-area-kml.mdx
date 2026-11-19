@@ -25,29 +25,34 @@ flowchart TD
 
 ---
 
-## 🕹️ Mengenal Tombol & Bilah Navigasi Multi-Area (Top-Left HUD Pill)
+## 🕹️ Mengenal Bilah Samping Khusus Blok Area & Indikator Minimalis
 
-Untuk menjaga ruang pandang layar remote controller tetap luas dan tidak menutupi indikator parameter utama (*Luas, Waktu, Foto, Baterai*), tombol kontrol blok ditempatkan di **sudut kiri atas layar peta (Top-Left)**:
+Untuk menjaga area kanvas peta satelit tetap luas, bersih, dan **100% bebas dari tumpang tindih (*zero overlap*)**, TW-Mapper menggunakan arsitektur antarmuka dua pilar:
+
+### 1. Bilah Samping Khusus Blok Area (`[ 📑 BLOK > ]`)
+Di sisi kiri tepi layar, kini terdapat tab pendamping yang sejajar dengan tab parameter:
+- **`[ PARAMETER > ]`**: Membuka pengaturan ketinggian, kecepatan, overlap, dan kamera.
+- **`[ 📑 BLOK (N) > ]`**: Membuka **Bilah Samping Khusus Blok Area (Multi-Area Panel)**.
 
 ```
-┌──────────────────────────────────────┐
-│  📑 Blok Area ▾                      │   (Saat baru mulai / 1 blok aktif)
-└──────────────────────────────────────┘
-┌──────────────────────────────────────┐
-│  ‹  1/33 Blok 1 (142.5 Ha) ▾  ›      │   (Saat multi-blok aktif > 1 blok)
-└──────────────────────────────────────┘
+┌────────────────────────────────┐
+│  ▶ PARAMETER                   │
+├────────────────────────────────┤
+│  ▶ 📑 BLOK (1/33)              │
+└────────────────────────────────┘
 ```
 
-1. **Tombol Pill Sudut Kiri Atas (`[ 📑 Blok Area ▾ ]`)**:
-   - Selalu siap diakses di sudut kiri atas saat berada di mode **Area Poligon**.
-   - Menyentuh tombol ini akan membuka **Dialog Kelola Blok Area**.
-2. **Navigasi Cepat Blok (`‹` dan `›`)**:
-   - Ketika file KML memiliki banyak blok, tanda panah `‹` dan `›` muncul di sisi kiri-kanan pill untuk beralih blok secara instan dengan satu sentuhan.
-3. **Pencarian & Manajemen Blok Bebas Polusi Layar**:
-   - Sentuh nama blok untuk membuka daftar lengkap blok dengan fitur **pencarian cepat (search)**, ganti nama, hapus blok, serta tombol **"+ Tambah Blok Baru"**.
-   - Tidak ada tombol `+` yang menumpuk di atas kanvas peta, menjaga layar tetap bersih dan fokus pada jalur terbang.
-4. **Akses Alternatif**:
-   - Anda juga dapat membuka jendela kelola blok melalui menu **Lapisan Peta** di sudut kanan atas (`Kelola Blok Area (Multi-Area)...`).
+Menyentuh tab ini akan membuka panel laci samping yang lengkap:
+- **Status & Nama Blok**: Melihat seluruh daftar blok kebun, afdeling, dan luas hektarnya ($Ha$).
+- **Navigasi Cepat (◀ dan ▶)**: Berpindah blok sasaran hanya dengan satu sentuhan tanpa repot.
+- **Pencarian Cepat (*Search*)**: Menemukan nama blok secara instan dari puluhan hingga ratusan partisi kebun.
+- **Tombol Hijau "+ Tambah Blok Baru"**: Menambahkan poligon blok baru langsung dari bilah samping tanpa memadati kanvas peta.
+- **Ganti Nama & Hapus**: Opsi edit nama dan hapus blok terorganisir rapi di dalam panel.
+
+### 2. Indikator Parameter Utama Minimalis (Dipepetkan ke Bar Atas)
+Bilah indikator parameter terbang (*Luas, Jarak, Waktu, Foto, Baterai, WP, GSD*) kini **dipepetkan langsung pada bar atas layar (`top: 0`)** dengan desain minimalis ultra-ramping (tinggi 24dp):
+- Bagian atas rata menempel langsung pada bilah judul (*CustomTitleBar*), dan bagian bawah melengkung halus (*docked ribbon shape*).
+- Menghilangkan celah kosong (*gap*) mengambang di langit peta sehingga tidak menutupi orientasi terbang maupun poligon kerja pilot.
 
 ---
 
