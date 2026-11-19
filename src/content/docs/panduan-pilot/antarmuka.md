@@ -54,6 +54,27 @@ Layar kerja terbagi menjadi 3 area utama yang sangat intuitif:
 - **Slider Overlap Depan & Samping**: Mengatur persentase tumpang tindih foto agar perangkat lunak pengolah peta (seperti Agisoft atau Pix4D) mudah menyambung foto.
 - **Slider Kecepatan Terbang**: Mengatur kecepatan laju drone. Perhatikan: slider ini memiliki batas aman otomatis (*speed clamping*) agar kamera tidak melewatkan foto.
 
-### 3. Bilah Status Atas
+### 3. Bilah Status Atas & Pengaturan Aplikasi
 - **Drone Tools**: Menu cepat untuk penguat sinyal radio FCC, pembuka batas ketinggian 500m, dan kontrol lampu malam drone.
+- **Pengaturan Aplikasi (⚙️)**: Menampilkan menu pengaturan yang tersusun dalam kisi 2x2 seimbang dan efisien:
+  - **Bahasa Antarmuka**: Beralih instan antara Bahasa Indonesia dan English untuk semua teks layar dan pesan bantuan lapangan.
+  - **Mode Perangkat**: Mode Smart Controller (DJI RC 2 / RC Pro) atau Mode HP / Tablet (RC-N series).
+  - **Edisi DJI Fly**: Memilih integrasi jalur rute untuk DJI Fly Mod atau Original.
+  - **Bilah Pintas Cepat (Quick Navigation)**: Mengaktifkan notifikasi baris status Android untuk beralih instan antara TW-Mapper dan DJI Fly di remote.
 - **Tombol Injeksi Misi KMZ (Tombol Biru Besar)**: Menghasilkan berkas rute resmi dan langsung menyimpannya ke dalam aplikasi DJI Fly.
+
+---
+
+## 🎯 Standar Desain Tombol & Ergonomi Lapangan
+
+Untuk memastikan kenyamanan jempol dan jari pilot saat beroperasi di bawah terik matahari atau menggunakan sarung tangan lapangan, TW-Mapper Mobile menerapkan standar geometri antarmuka yang konsisten:
+
+1. **Tombol Kotak Bersudut Membulat (*Rounded Rectangle* 6–8 dp)**:
+   - Seluruh tombol aksi utama, tombol navigasi blok (`‹` dan `›`), tombol *Takeoff H*, tombol *Edit/Gambar Misi*, tombol *Tambah Titik/Blok*, serta tombol pada dialog pengaturan diseragamkan dengan sudut membulat modern. Geometri ini memberikan area sentuh (*tap target*) yang maksimal dan mencegah salah pencet.
+2. **Elemen Bulat Alami (*Natural Circular Elements*)**:
+   - Elemen yang memiliki fungsi semantik berorientasi derajat dan koordinat tetap berbentuk lingkaran murni (`circle`):
+     - **Kompas Azimut 360°**: Tetap bulat presisi agar penunjukan arah mata angin utara dan heading drone terlihat natural.
+     - **Titik Patok GIS (1, 2, 3...)**: Titik sudut poligon lahan tetap lingkaran dengan pusat tepat di koordinat GPS.
+     - **Pin Terminal Rute (A & B)**: Penanda titik awal dan akhir rute penerbangan.
+     - **Indikator Titik Jepret Kamera (*Shutter Dots*)**: Lingkaran titik jepret foto di sepanjang jalur terbang.
+     - **Lampu Status Sambungan Drone**: Lingkaran LED status hijau/merah telemetri.
