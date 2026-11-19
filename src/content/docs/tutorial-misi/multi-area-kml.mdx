@@ -74,6 +74,7 @@ Memahami format penyimpanan sangat penting agar data proyek perkebunan Anda ters
 ### Pratinjau Bersih & Terpadu di Menu Buka Misi
 Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi**:
 - Mini-map pratinjau secara otomatis mencakup **seluruh cakupan area kebun** dari ujung ke ujung menggunakan pembingkaian cerdas (*auto-fit bounds*).
+- **Warna Cerah & Kontras Unik Per Blok**: Setiap blok digambar dengan warna berbeda (Cyan, Amber, Hot Pink, Neon Green, Orange, Purple, Lime, dsb.) yang sangat kontras di atas citra satelit, sehingga tidak ada dua blok yang berwarna sama.
 - Menampilkan cakupan visual poligon batas area yang bersih di atas citra satelit tanpa indikator penerbangan yang tidak relevan (tanpa rute A/B, garis terbang, atau perkiraan foto).
 - Di bilah atas pratinjau, disajikan ringkasan instan: `[N] BLOK • [Total Luas] Ha`, sehingga pilot langsung mengetahui isi berkas sebelum memuatnya ke kanvas.
 
@@ -85,7 +86,7 @@ Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi
 1. Ketuk ikon folder **Buka** di bilah judul atas.
 2. Pilih opsi **KML / KMZ**.
 3. Cari berkas KML Anda (misal: `MUBA.kml` dari flashdisk USB atau kartu microSD).
-4. Aplikasi akan langsung mendeteksi seluruh poligon yang ada di dalam berkas tersebut dan menyusunnya menjadi daftar blok siap pakai.
+4. Aplikasi akan langsung mendeteksi seluruh poligon yang ada di dalam berkas tersebut dan menyusunnya menjadi daftar blok siap pakai dengan warna-warni kontras tinggi yang unik.
 
 > [!NOTE]
 > *TW-Mapper membaca nama setiap blok dari tag `<name>` di dalam KML asli. Jika tag nama kosong, aplikasi secara otomatis menamai blok sebagai `Blok 1`, `Blok 2`, dst.*
@@ -99,11 +100,11 @@ Anda dapat mengaktifkan dan mengelola blok yang ingin dipetakan dengan berbagai 
 #### Cara A: Bilah Samping Blok Minimalis (*Dedicated Sidebar*)
 - Buka bilah samping blok dari menu parameter/bilah kanan.
 - Desain kartu dibuat ramping satu baris per blok (*ultra-compact single-row*), sangat ringan dan hemat memori pada remote controller DJI RC 2 / RC Pro.
-- Setiap baris dilengkapi indikator titik aktif, nama blok, luas hektar, tombol ubah nama, dan tombol hapus blok.
+- Setiap baris dilengkapi indikator titik warna blok yang selaras dengan warna poligon di peta, nama blok, luas hektar, tombol ubah nama, dan tombol hapus blok.
 
 #### Cara B: Sentuh Langsung di Peta (*Tap-to-Activate*)
 - Di layar peta, blok yang sedang **aktif** memiliki garis batas tegas dengan jalur terbang lengkap. Tombol tengah pada blok aktif disembunyikan agar kanvas leluasa saat mengedit sudut poligon.
-- Blok pasif lainnya ditandai dengan garis batas dan label nama serta luas yang menempel pas (*shrink-wrap fit shape*) pada teksnya.
+- Blok pasif lainnya ditandai dengan garis batas berwarna cerah unik dan label nama serta luas yang menempel pas (*shrink-wrap fit shape*) pada teksnya.
 - Cukup **sentuh label atau poligon blok** yang ingin Anda kerjakan untuk langsung menjadikannya blok aktif!
 
 #### Cara C: Penamaan Blok Ramah Keyboard (*Keyboard-Safe Dialog*)
