@@ -45,3 +45,8 @@ Jangan menghadapkan kamera lurus mendatar ($0^\circ$). Kamera yang mendatar akan
 
 ### 3. Jari-Jari Aman (*Standoff Distance*)
 Atur radius jarak putaran drone minimal **15 hingga 25 meter** dari titik tengah menara untuk menjaga jarak aman dari antena sektoral maupun turbulensi angin di sekitar tiang.
+
+### 4. Kecepatan Terbang Misi Presisi Tinggi (Mulai dari 0.1 m/s)
+Pada inspeksi detail baut, korosi, tiang telekomunikasi, maupun permukaan fasad bangunan yang sempit, TW-Mapper Mobile memungkinkan pengaturan kecepatan terbang serendah **0.1 m/s** (~0.4 km/j).
+- **Bebas Blur Gerak (*Zero Motion Blur*)**: Sangat ideal saat menggunakan mode kamera resolusi tinggi (48 MP / 50 MP) dengan jeda shutter 5 detik, atau pada kondisi pencahayaan berawan yang memerlukan exposure lebih stabil.
+- **Toleransi Shutter Hardware**: Slider kecepatan otomatis menyesuaikan batas aman WanDrone Safe Speed Clamping dengan resolusi kenaikan bertahap 0.1 m/s sehingga drone tidak pernah melewatkan bidikan foto (*zero missed frames*).
