@@ -93,13 +93,14 @@ Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi
 > *TW-Mapper membaca nama setiap blok dari tag `<name>` di dalam KML asli. Jika tag nama kosong, aplikasi secara otomatis menamai blok sebagai `Blok 1`, `Blok 2`, dst.*
 
 > [!TIP]
-> **Default Pintar Multi-Boundaries (Ketinggian 200m, Jalur Efektif Sisi 1 & TimeShoot)**:
-> Setiap kali membuka berkas KML maupun KMZ dengan banyak batas area (*multi-boundaries* seperti SK RDAS, konsesi kebun sawit, atau partisi blok tambang), TW-Mapper secara cerdas langsung menerapkan nilai default awal paling efisien:
-> 1. **Ketinggian Otomatis 200 Meter**: Disesuaikan untuk survei area luas agar cakupan foto per lajur maksimal dan konsumsi baterai optimal.
-> 2. **Jalur Efektif Sisi 1 (Sejajar Sisi Terpanjang)**: Jalur terbang otomatis mengunci orientasi terpanjang poligon (Sisi 1) guna meminimalkan manuver belokan dan putaran drone.
-> 3. **Pemicu Interval Waktu (*TimeShoot*)**: Memangkas jumlah waypoint dan memastikan misi bebas kendala batas waypoint DJI.
+> **Default Pintar Multi-Boundaries (Ketinggian 200m, Interval Waktu & Jalur Efektif Sisi 1)**:
+> Setiap kali membuka berkas KML maupun KMZ dengan banyak batas area (*multi-boundaries* seperti SK RDAS, konsesi kebun sawit, atau partisi blok tambang), TW-Mapper secara cerdas langsung menerapkan nilai default awal paling efisien sebelum pengguna mengubah dan menyimpannya sendiri:
+> 1. **Pemicu Kamera Interval Waktu (*TimeShoot*)**: Otomatis mengaktifkan pemotretan berbasis interval waktu (*auto-shutter*), memangkas jumlah waypoint hingga di bawah 10% dan memastikan misi bebas dari kendala batas waypoint DJI (maksimal 65.535 WP).
+> 2. **Ketinggian Otomatis 200 Meter**: Ketinggian terbang langsung diatur ke 200 meter untuk survei area luas agar cakupan tapak foto per lajur maksimal, jarak tempuh hemat, dan konsumsi baterai optimal.
+> 3. **Jalur Efektif Sisi 1 (Sejajar Sisi Terpanjang)**: Jalur terbang otomatis mengunci orientasi terpanjang poligon (Sisi 1) guna meminimalkan manuver belokan dan putaran drone.
 > 
-> Nilai-nilai ini menjadi default awal saat berkas dibuka, dan pilot tetap leluasa mengubah ketinggian, memilih sisi lain (Sisi 2/3/4), maupun menyesuaikan parameter lainnya sesuai kebutuhan lapangan.
+> **Penyimpanan Parameter Kustom Pilot**:
+> Nilai di atas adalah standar awal sebelum diubah. Jika Anda mengubah ketinggian (misal menjadi 150m), mengganti sisi jalur (Sisi 2/3/4), atau memilih pemicu jarak, lalu menyimpan misi tersebut ke berkas KML/KMZ proyek, TW-Mapper akan **mengingat dan memuat seutuhnya parameter tersimpan Anda** saat berkas tersebut dibuka kembali di masa depan tanpa menimpanya dengan nilai default.
 
 ---
 

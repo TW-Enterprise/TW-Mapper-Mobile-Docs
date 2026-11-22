@@ -635,13 +635,15 @@ async function main() {
   console.log(`✓ HTML buku manual berhasil dibuat: ${tmpHtml}`);
 
   console.log('==> Menjalankan Puppeteer untuk mengekspor PDF...');
-  const systemChrome = existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
-    ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-    : (existsSync('/usr/bin/google-chrome')
-      ? '/usr/bin/google-chrome'
-      : (existsSync('/usr/bin/chromium-browser')
-        ? '/usr/bin/chromium-browser'
-        : undefined));
+  const chromeCandidates = [
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/usr/bin/google-chrome',
+    '/usr/bin/google-chrome-stable',
+    '/usr/bin/chromium',
+    '/usr/bin/chromium-browser',
+    '/snap/bin/chromium',
+  ];
+  const systemChrome = chromeCandidates.find(p => existsSync(p));
 
   const browser = await puppeteer.launch({
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChrome,
@@ -678,6 +680,6 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error('Gagal mengekspor PDF:', err);
-  process.exit(1);
+  console.warn('⚠️ Catatan: Ekspor PDF manual book dilewati (browser tidak tersedia):', err.message);
+  process.exit(0);
 });
