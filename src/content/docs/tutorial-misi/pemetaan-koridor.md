@@ -33,8 +33,9 @@ flowchart LR
 - Jika jalan berbelok, cukup tambahkan titik di setiap tikungan. Garis poros jalan akan terbentuk mengikuti kontur aspal.
 
 ### Langkah 3: Tentukan Lebar Koridor Target
-- Di panel pengaturan kanan, tentukan **Lebar Koridor (Corridor Width)**, misalnya **60 meter** (30 meter ke kiri dan 30 meter ke kanan poros jalan).
-- Garis batas penyangga (*buffer area*) otomatis mengembang di sekeliling jalan.
+- Di panel pengaturan kanan, tentukan **Lebar Koridor (Corridor Width)** hingga **500 meter** (mode Simetris), atau gunakan mode **Asimetris** jika lebar sisi kiri dan sisi kanan jalan/sungai berbeda.
+- Garis batas penyangga (*buffer area*) otomatis mengembang di sekeliling jalan dan luas Hektar dihitung presisi mengikuti panjang sumbu tengah jalan.
+- Anda juga dapat memilih **Titik Awal (A / B)** dan **Mirror (Kiri / Kanan)** agar drone langsung memulai survei dari ujung koridor terdekat dengan posisi pilot.
 
 ### Langkah 4: Tentukan Jumlah Lajur (Pass Lines)
 - **1 Jalur (Single Pass)**: Drone terbang satu arah lurus tepat di atas poros jalan. Sangat cepat, cocok untuk inspeksi visual kondisi aspal atau pipa sempit.

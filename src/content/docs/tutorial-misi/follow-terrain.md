@@ -30,13 +30,18 @@ flowchart LR
 ```
 
 ### Keuntungan Utama:
-- **Jarak Kamera ke Tanah Selalu Sama**: Jika Anda mengatur ketinggian $H = 80\text{ meter}$, drone akan otomatis naik saat melewati bukit dan turun saat melewati lembah, sehingga jarak ke tanah selalu tepat 80 meter.
+- **Jarak Kamera ke Tanah Selalu Sama**: Jika Anda mengatur ketinggian $H = 80\text{ meter}$, drone akan otomatis naik saat melewati bukit dan turun saat melewati lembah (termasuk sejak titik masuk *overshoot* pertama), sehingga jarak ke tanah selalu tepat 80 meter.
 - **Resolusi Pixel (GSD) Konsisten**: Seluruh foto dari ujung utara hingga selatan memiliki ketajaman dan skala yang seragam.
 - **Overlap Foto Stabil**: Persentase overlap depan dan samping tidak menyempit atau melebar secara liar akibat perubahan elevasi tanah.
+- **Dukungan Penuh File DEM Offline `.tif` (GeoTIFF)**: Mendukung langsung file DEM GeoTIFF lokal tanpa kompresi maupun terkompresi standar QGIS / Global Mapper (**Deflate & LZW**, baik format *Striped* maupun *Tiled*), hingga 4 slot file sekaligus.
 
 ---
 
 ## 💡 Tips Keselamatan Terbang di Area Berbukit
+
+> [!IMPORTANT]
+> **Wajib Tentukan Titik Takeoff (H) Terlebih Dahulu**:
+> Sebelum mengaktifkan tombol **Follow Terrain**, pilot wajib memasang **Titik Takeoff (H)** di peta terlebih dahulu (via GPS RC atau sentuh peta). Elevasi tanah di titik Takeoff dipakai sebagai patokan 0 meter relatif untuk seluruh ketinggian jalur drone.
 
 > [!WARNING]
 > **Pilih Titik Lepas Landas (*Take-off Point*) yang Tinggi**:

@@ -50,3 +50,8 @@ Atur radius jarak putaran drone minimal **15 hingga 25 meter** dari titik tengah
 Pada inspeksi detail baut, korosi, tiang telekomunikasi, maupun permukaan fasad bangunan yang sempit, TW-Mapper Mobile memungkinkan pengaturan kecepatan terbang serendah **0.1 m/s** (~0.4 km/j).
 - **Bebas Blur Gerak (*Zero Motion Blur*)**: Sangat ideal saat menggunakan mode kamera resolusi tinggi (48 MP / 50 MP) dengan jeda shutter 5 detik, atau pada kondisi pencahayaan berawan yang memerlukan exposure lebih stabil.
 - **Toleransi Shutter Hardware**: Slider kecepatan otomatis menyesuaikan batas aman WanDrone Safe Speed Clamping dengan resolusi kenaikan bertahap 0.1 m/s sehingga drone tidak pernah melewatkan bidikan foto (*zero missed frames*).
+
+### 5. Kunci Arah Hadap Kepala Drone (POI Lock), Cincin Penuh 360° & Thumbnail Lingkaran
+- **Arah Hadap Terkunci ke Pusat Menara**: Di setiap titik orbit, arah kepala drone dihitung langsung menuju titik tengah menara/bangunan dengan arah putar (`Clockwise` / `Counter-Clockwise`) yang selaras penuh di DJI Fly agar drone selalu menghadap ke objek dan tidak pernah membelakangi menara.
+- **Putaran Cincin 360° Penuh**: Pada mode Cincin Bertingkat (*Cylinder Rings*), setiap tingkatan menyelesaikan lingkaran 360° penuh secara datar sebelum naik ke tingkatan berikutnya.
+- **Pratinjau Thumbnail Lingkaran**: Kartu misi Orbit di DJI Fly dan arsip KMZ kini menampilkan thumbnail preview berbentuk lingkaran mulus lengkap dengan posisi struktur target di tengahnya.
