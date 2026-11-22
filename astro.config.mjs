@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { fileURLToPath } from 'node:url';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
 import remarkMath from 'remark-math';
@@ -10,6 +11,14 @@ const siteUrl = process.env.DOCS_SITE ?? 'https://tw-enterprise.github.io';
 export default defineConfig({
   site: siteUrl,
   base,
+  vite: {
+    resolve: {
+      alias: {
+        'd3-shape': fileURLToPath(new URL('./node_modules/.pnpm/d3-shape@3.2.1/node_modules/d3-shape/dist/d3-shape.mjs', import.meta.url)),
+        'd3-array': fileURLToPath(new URL('./node_modules/.pnpm/d3-array@3.2.5/node_modules/d3-array/dist/d3-array.mjs', import.meta.url)),
+      },
+    },
+  },
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],

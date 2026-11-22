@@ -93,8 +93,13 @@ Saat Anda memilih berkas KML multi-blok (seperti `MUBA.kml`) di menu **Buka Misi
 > *TW-Mapper membaca nama setiap blok dari tag `<name>` di dalam KML asli. Jika tag nama kosong, aplikasi secara otomatis menamai blok sebagai `Blok 1`, `Blok 2`, dst.*
 
 > [!TIP]
-> **Otomatis Dialihkan ke Interval Waktu (*TimeShoot*)**:
-> Saat berkas KML multi-area dimuat, TW-Mapper secara cerdas otomatis mengalihkan parameter pemicu foto ke **Interval Waktu (*TimeShoot*)**. Ini memangkas jumlah waypoint secara drastis (hanya menaruh waypoint di ujung dan belokan lajur) sehingga penerbangan sangat mulus dan bebas dari batas waypoint DJI. Kendati demikian, pilot tetap leluasa mengubahnya kembali ke mode jarak/waypoint kapan pun melalui panel parameter samping.
+> **Default Pintar Multi-Boundaries (Ketinggian 200m, Jalur Efektif Sisi 1 & TimeShoot)**:
+> Setiap kali membuka berkas KML maupun KMZ dengan banyak batas area (*multi-boundaries* seperti SK RDAS, konsesi kebun sawit, atau partisi blok tambang), TW-Mapper secara cerdas langsung menerapkan nilai default awal paling efisien:
+> 1. **Ketinggian Otomatis 200 Meter**: Disesuaikan untuk survei area luas agar cakupan foto per lajur maksimal dan konsumsi baterai optimal.
+> 2. **Jalur Efektif Sisi 1 (Sejajar Sisi Terpanjang)**: Jalur terbang otomatis mengunci orientasi terpanjang poligon (Sisi 1) guna meminimalkan manuver belokan dan putaran drone.
+> 3. **Pemicu Interval Waktu (*TimeShoot*)**: Memangkas jumlah waypoint dan memastikan misi bebas kendala batas waypoint DJI.
+> 
+> Nilai-nilai ini menjadi default awal saat berkas dibuka, dan pilot tetap leluasa mengubah ketinggian, memilih sisi lain (Sisi 2/3/4), maupun menyesuaikan parameter lainnya sesuai kebutuhan lapangan.
 
 ---
 
