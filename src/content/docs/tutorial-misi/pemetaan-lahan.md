@@ -26,8 +26,10 @@ flowchart TD
 ### Langkah 1: Tandai Batas Lahan pada Peta
 1. Buka aplikasi **TW-Mapper Mobile**.
 2. Geser peta ke lokasi lahan yang ingin Anda petakan.
-3. Ketuk ikon **Pensil/Titik (📍)** pada bilah alat kiri.
-4. Sentuh layar di setiap sudut patok batas tanah Anda (minimal 3 titik). Garis batas poligon berwarna cyan akan otomatis menghubungkan setiap titik.
+3. Ketuk tombol **Edit / Gambar Misi** untuk masuk ke mode menggambar batas area (AOI).
+4. Pilih metode gambar di bar kiri bawah (**Bidik**, **Sentuh**, atau **GPS RC**), dan pastikan tombol penggaris **`📏 Ukur: ON`** (tepat di sebelah kiri tombol **Selesai**) menyala jika Anda ingin memplot area berdasarkan jarak dan arah kompas secara *real-time* (gaya AlpineQuest):
+   - **Garis Karet Bidik (*Live Rubber-Band*) dengan Label Transparan Fit-to-Text**: Saat menggunakan mode **Bidik**, garis putus-putus biru otomatis terhubung dari titik Takeoff `[H]` atau titik sudut terakhir ke bidikan tengah (`+`), menampilkan **Jarak (`m`) • Arah Derajat Kompas (`°`) • Sudut Belok (`Δ° Kanan/Kiri`)** dalam label semi-transparan ringkas yang pas menempel ke teks agar selalu tajam terbaca di atas citra satelit.
+   - **Label Panjang Tiap Sisi & Titik Sudut Ringkas**: Setiap sisi batas lahan langsung menampilkan panjang meternya (misal: `150.0 m`). Titik-titik sudut poligon tampil sebagai dot kecil presisi agar tidak menutupi batas lahan, dan otomatis membesar sambil menampilkan nomor urutnya ketika Anda ketuk untuk diedit. Bar metrik atas (**Luas, Jarak, Waktu, Foto, Baterai, Titik**) juga tetap terlihat *live* selama mode edit.
 5. Secara otomatis, jalur garis terbang bergaris zig-zag akan terbentang rapi di dalam lahan Anda.
 
 ### Langkah 2: Pilih Model Drone Anda

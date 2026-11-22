@@ -43,9 +43,10 @@ Layar kerja terbagi menjadi 3 area utama yang sangat intuitif:
 
 ### 1. Panel Alat Peta (Sisi Kiri Layar)
 - **Ikon Poligon / Titik (📍)**: Mode untuk menambahkan batas patok lahan. Cukup ketuk layar peta di sudut-sudut kebun Anda, maka garis poligon otomatis tersambung.
+- **Tombol Penggaris Real-Time (`📏 Ukur: ON / OFF`)**: Mengaktifkan atau mematikan penggaris jarak dan arah derajat kompas *real-time* antar titik sudut (gaya AlpineQuest) saat menggambar atau menggeser batas AOI. Sangat berguna ketika tim lapangan harus memplot area dadakan berdasarkan instruksi jarak dan arah dari titik Takeoff `[H]` (misal: *"150 meter serong kanan, lalu patah 100 meter ke tenggara"*).
 - **Ikon Undo / Batalkan (↩️)**: Menghapus titik terakhir jika Anda salah menyentuh layar.
 - **Ikon Tempat Sampah (🗑️)**: Membersihkan seluruh area kerja jika ingin membuat misi baru dari nol.
-- **Ikon Ganti Lapisan Peta (🗺️)**: Beralih antara tampilan citra satelit Google, peta jalan hybrid, atau OpenStreetMap.
+- **Ikon Ganti Lapisan Peta (🗺️)**: Beralih antara tampilan **Google Hybrid (Satelit + Label)**, **Google Satelit Murni**, **Esri Citra Satelit (World Imagery)**, dan **Esri Peta Jalan (Street Map)** yang seluruhnya terintegrasi penuh dengan cache peta offline.
 
 ### 2. Panel Pengaturan Misi (Sisi Kanan Layar)
 - **Pemilih Model Drone**: Pilih jenis drone yang Anda gunakan saat ini (Mini 4 Pro, Air 3, Mavic 3, dll.). Nilai sensor dan kamera akan langsung menyesuaikan otomatis.
