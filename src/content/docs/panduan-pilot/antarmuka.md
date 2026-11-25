@@ -43,7 +43,7 @@ Layar kerja terbagi menjadi 3 area utama yang sangat intuitif:
 
 ### 1. Panel Alat Peta (Sisi Kiri Layar)
 - **Ikon Poligon / Titik (📍)**: Mode untuk menambahkan batas patok lahan. Cukup ketuk layar peta di sudut-sudut kebun Anda, maka garis poligon otomatis tersambung.
-- **Tombol Penggaris Real-Time (`📏 Ukur: ON / OFF`)**: Mengaktifkan atau mematikan penggaris jarak dan arah derajat kompas *real-time* antar titik sudut (gaya AlpineQuest) saat menggambar atau menggeser batas AOI. Sangat berguna ketika tim lapangan harus memplot area dadakan berdasarkan instruksi jarak dan arah dari titik Takeoff `[H]` (misal: *"150 meter serong kanan, lalu patah 100 meter ke tenggara"*).
+- **Tombol Penggaris Real-Time (`📏 Ukur: ON / OFF`) & Tombol `Skala` (Kanan Atas Mode Edit)**: Kini berada rapi di panel kanan atas tepat di bawah tombol **Hapus Area** dan **Pusatkan** dengan lebar sejajar kedua tombol tersebut, sehingga baris alat di bawah tetap ringkas sementara Anda dapat mengaktifkan garis ukur jarak/kompas *real-time* (gaya AlpineQuest) atau mengatur skala ukuran area (`-` / `+`).
 - **Ikon Undo / Batalkan (↩️)**: Menghapus titik terakhir jika Anda salah menyentuh layar.
 - **Ikon Tempat Sampah (🗑️)**: Membersihkan seluruh area kerja jika ingin membuat misi baru dari nol.
 - **Ikon Ganti Lapisan Peta (🗺️)**: Beralih antara tampilan **Google Hybrid (Satelit + Label)**, **Google Satelit Murni**, **Esri Citra Satelit (World Imagery)**, dan **Esri Peta Jalan (Street Map)** yang seluruhnya terintegrasi penuh dengan cache peta offline.
