@@ -56,6 +56,8 @@ Layar kerja terbagi menjadi 3 area utama yang sangat intuitif:
 - **Slider Kecepatan Terbang**: Mengatur kecepatan laju drone. Perhatikan: slider ini memiliki batas aman otomatis (*speed clamping*) agar kamera tidak melewatkan foto.
 
 ### 3. Bilah Status Atas & Pengaturan Aplikasi
+- **Home Menu (`Mulai Cepat`) & Menu Fitur**: Keduanya menggunakan wadah panel datar (**Flat Solid**) seragam di bawah bilah atas dengan header judul yang jelas serta tombol tutup `✕` di pojok kanan atas, membungkus kartu-kartu aksi 2 kolom secara rapi dan konsisten.
+- **Tombol Baru (`+ Baru`)**: Membuka panel pembuatan misi baru dalam wadah **Flat Solid** yang seragam dengan panduan **STEP 1–4** (*Nama Misi & Mulai*, *Pilih Mode Pemetaan*, *Pilih Cara Menandai Titik*, serta *Kamera, Ketinggian & Kecepatan*). Kolom ketik **Nama Misi**, **Tinggi**, dan **Kecepatan** bersifat adaptif terhadap kemunculan papan ketik (*keyboard*) agar selalu berada di atas keyboard saat mengetik di layar lanskap remote maupun ponsel.
 - **Drone Tools**: Menu cepat untuk penguat sinyal radio FCC, pembuka batas ketinggian 500m, dan kontrol lampu malam drone.
 - **Pengaturan Aplikasi (⚙️)**: Menampilkan menu pengaturan yang tersusun dalam kisi 2x2 seimbang dan efisien:
   - **Bahasa Antarmuka**: Beralih instan antara Bahasa Indonesia dan English untuk semua teks layar dan pesan bantuan lapangan.

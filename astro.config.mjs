@@ -83,6 +83,7 @@ export default defineConfig({
         {
           label: 'Drone Tools & Kesiapan Lapangan',
           items: [
+            { label: 'Audit Foto (Anti Foto Bolong)', slug: 'tools-lapangan/audit-sdcard-autopatch' },
             { label: 'Unduh Peta Satelit Offline', slug: 'tools-lapangan/peta-offline' },
             { label: 'Penguat Sinyal Radio (Mode FCC)', slug: 'tools-lapangan/fcc-signal' },
             { label: 'Buka Batas Tinggi 500m (Altitude)', slug: 'tools-lapangan/altitude-unlock' },
